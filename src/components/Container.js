@@ -1,25 +1,19 @@
-import React from 'react'
-import Board from './Board'
-
+import React, { useState } from "react";
+import Board from "./Board";
 
 const Container = () => {
-  const ContainerStyle={
+  const ContainerStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    border: "none",
+    flexDirection: "column",
+  };
 
-    display:"flex",
-    alignItems:"center",
-    justifyContent:'center',
-    margin:"0 auto",
-    border:"none",
-    flexDirection:"column",
-  
-
-  
-
-  }
   return (
-    <div>
-      {/* <Board/> */}
+    <div className="container" id="container" style={ContainerStyle}>
+      <Board />
     </div>
-  )
-}
-
+  );
+};
+export default Container;
